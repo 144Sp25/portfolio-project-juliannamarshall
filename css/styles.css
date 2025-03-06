@@ -14,8 +14,14 @@ body, header, nav, main, footer, h1, div, img{
 /*Style rules for header*/
 header{
     background-color: floralwhite;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
     color:darkslateblue;
+}
+
+header img{
+    margin: 0 auto;
 }
 
 /*Style rules for body and images*/
@@ -26,7 +32,7 @@ body{
 img{
     max-width: 100%;
     display: block;
-    margin: 2em;
+    border-radius: 15px;
 }
 
 #welcome{
@@ -35,9 +41,8 @@ img{
 
 /*Style rules for navigation area*/
 nav{
-    width: 60%;
-    float: right;
-    margin: -38em 2em 0 50em ;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul{
@@ -48,9 +53,9 @@ nav ul{
 
 nav li{
     display: inline-block;
-    font-size: 1.5em;
-    font-family: Verdana, Arial, sans-serif;
-    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav li a{
@@ -66,13 +71,30 @@ main{
     clear: left;
     background-color: floralwhite;
     padding: 2%;
-    font-size: 1.25em;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hello{
     font-size: 1.35em;
     font-weight: bold;
+}
+
+.about-me{
+    font-style: italic
+}
+
+.mobile{
+    display: block;
+}
+
+.tablet-desktop{
+    display: none;
+}
+
+.link{
+    word-wrap: break-word
 }
 
 /*Style rules for footer*/
