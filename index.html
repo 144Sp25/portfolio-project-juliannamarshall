@@ -12,38 +12,41 @@ Date: 2/5/25
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    </head>
     <body>
-        <header>
-            <h1>Julianna Marshall</h1>
-            <h1>Personal Portfolio</h1>
-            <img id="welcome" src="images/pictureofjulianna.jpg" alt="Picture of Julianna Marshall">
+        <div id="container">
+            <header>
+            <h1>Julianna Marshall's Personal Portfolio</h1>   
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </nav>
+            </header>
 
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <!--Use the main area to add the main content to the webpage-->
-        <main>
-            <div class="mobile">
-                <p class="hello">Hello! Welcome to the homepage of my portfolio!</p>
-                <p class="about-me">A little bit about me:</p>
-                <p>I'm from Blue Springs, Missouri and I'm a Computer Science and Digital Media student at Northwest Missouri State University. I'm anticipated to graduate in May of 2026.</p>
-            </div>
-            
-            <div class="tablet-desktop">
-                <p class="hello">Hello!</p><p>Welcome to the homepage of my portfolio! I'm from Blue Springs, Missouri and I'm a Computer Science and Digital Media student at Northwest Missouri State University. I'm anticipated to graduate in May of 2026.</p>
-                <p>My programming journey starts in the fall of 2022. I've had experiences in all types of languages like Python, C, ARM Assembly, JavaScript, and Bash, but I would have to say that Java and HTML are my favorites.</p>
-                <p>I've also really enjoyed designing flyers for my sorority and the School of Computer Science &amp; Information Systems at Northwest</p>
-            </div>
-        </main>
-        
-        <footer>
-            <p><a href="mailto:s553902@nwmissouri.edu">s553902@nwmissouri.edu</a></p>
-        </footer>
+            <!--Use the main area to add the main content to the webpage-->
+            <main>
+                <div id="image-me">
+                    <img id="welcome" src="images/pictureofjulianna.jpg" alt="Picture of Julianna Marshall">
+                </div>
+                <div id="info">
+                    <div class="mobile">
+                        <p class="hello">Hello! Welcome to the homepage of my portfolio!</p>
+                        <p class="about-me">A little bit about me:</p>
+                        <p>I'm from Blue Springs, Missouri and I'm a Computer Science and Digital Media student at Northwest Missouri State University. I'm anticipated to graduate in May of 2026.</p>
+                    </div>
+
+                    <div class="tablet-desktop">
+                        <p class="hello">Hello!</p><p>Welcome to the homepage of my portfolio! I'm from Blue Springs, Missouri and I'm a Computer Science and Digital Media student at Northwest Missouri State University. I'm anticipated to graduate in May of 2026.</p>
+                        <p>My programming journey starts in the fall of 2022. I've had experiences in all types of languages like Python, C, ARM Assembly, JavaScript, and Bash, but I would have to say that Java and HTML are my favorites.</p>
+                        <p>I've also really enjoyed designing flyers for my sorority and the School of Computer Science &amp; Information Systems at Northwest</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <p><a href="mailto:s553902@nwmissouri.edu">s553902@nwmissouri.edu</a></p>
+            </footer>
+        </div>
     </body>
 </html>

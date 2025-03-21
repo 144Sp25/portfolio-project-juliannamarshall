@@ -20,13 +20,10 @@ header{
     color:darkslateblue;
 }
 
-header img{
-    margin: 0 auto;
-}
-
 /*Style rules for body and images*/
 body{
     background-color: floralwhite;
+    font-size: 30px;
 }
 
 img{
@@ -48,7 +45,7 @@ nav{
 nav ul{
     list-style-type: none;
     margin: 0;
-    text-align: center;
+    text-align: right;
 }
 
 nav li{
@@ -81,6 +78,19 @@ main{
     font-weight: bold;
 }
 
+#image-me{
+    margin: 0 2%;
+    width: 40%;
+    float:left;
+    padding-top: 140px;
+}
+
+#info{
+    margin: 0 2%;
+    width: 40%;
+    float: left; 
+}
+
 .about-me{
     font-style: italic
 }
@@ -100,9 +110,81 @@ main{
 /*Style rules for footer*/
 footer{
     background-color: floralwhite;
+    clear: both;
 }
 
 footer p a{
     text-decoration: none;
     color: darkslateblue;
+}
+
+/*Media Query for Mobile Viewport*/
+@media screen and (min-width: 320px), print{
+    .tablet-desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+    
+    body h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    nav ul{
+        text-align: center;
+    }
+    
+    #image-me{
+        display: none;
+    }
+
+    #info, #projects, #contact{
+        margin-left: 15%;
+        width: 75%;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px), print{
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .tablet-desktop{
+        display: block;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    #image-me{
+        display: block;
+        margin: 0 2%;
+        width: 40%;
+        float:left;
+        padding-top: 0;
+    }
+
+    #info, #projects, #contact{
+        margin: 0 2%;
+        width: 40%;
+        float: left;
+        font-size: 10px;
+    }
+}
+
+/*Media Query for Desktop Viewports*/
+@media screen and (min-width: 1015px){
+    #container{
+        width: 1014px;
+        margin: 0 auto;
+    }
+
+    nav li a:hover{
+        color: #000;
+        background-color: #fff;
+    }
 }
